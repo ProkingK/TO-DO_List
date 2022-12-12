@@ -7,6 +7,9 @@
         <meta name="viewport" content="width=device-width, initial-scale=1.0">
 
         <link rel="icon" href="favicon.png" />
+        <link rel="stylesheet" href="main.css">
+
+        <script src="https://kit.fontawesome.com/c8a9f34c0a.js" crossorigin="anonymous"></script>
 
         <title>TO-DO List</title>
     </head>
@@ -24,11 +27,7 @@
                     placeholder="eg. Buy milk"
                 />
 
-                <input 
-                    value="Add" 
-                    type="submit"
-                    id="new-task-submit"
-                />
+                <button id="new-task-submit"><i class="fa-solid fa-plus"></i></button>
             </form>
         </header>
 
@@ -44,11 +43,12 @@
                                 type="text"
                                 class="text" 
                                 name="task"
+                                readonly
                             />
                         </div>
                         <div class="actions">
-                            <button class="edit">Edit</button>
-                            <button class="edit">Delete</button>
+                            <button class="edit" title="edit task"><i class="fa-solid fa-pen-to-square"></i></button>
+                            <button class="delete" title="delete task"><i class="fa-solid fa-trash"></i></button>
                         </div>
                     </div>
                 </div>
