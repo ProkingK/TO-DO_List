@@ -1,0 +1,64 @@
+<!DOCTYPE html>
+<html lang="en">
+
+    <head>
+        <meta charset="UTF-8">
+        <meta http-equiv="X-UA-Compatible" content="IE=edge">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+        <link rel="icon" href="favicon.png" />
+
+        <title>TO-DO List</title>
+    </head>
+
+    <body>
+
+        <header>
+            <h1 class="title">TO-DO LIST</h1>
+
+            <form id="new-task-form">
+                <input 
+                    type="text" 
+                    name="new-task" 
+                    id="new-task-input" 
+                    placeholder="eg. Buy milk"
+                />
+
+                <input 
+                    value="Add" 
+                    type="submit"
+                    id="new-task-submit"
+                />
+            </form>
+        </header>
+
+        <main>
+
+            <section class="task-list">
+                <h2 class="section-heading">Tasks</h2>
+
+                <div id="tasks">
+                    <div class="task">
+                        <div class="content">
+                            <input 
+                                type="text"
+                                class="text" 
+                                name="task"
+                            />
+                        </div>
+                        <div class="actions">
+                            <button class="edit">Edit</button>
+                            <button class="edit">Delete</button>
+                        </div>
+                    </div>
+                </div>
+            </section>
+
+        </main>
+
+    <script src="https://code.jquery.com/jquery-3.6.1.js" integrity="sha256-3zlB5s2uwoUzrXK3BT7AX3FyvojsraNFxCc2vC/7pNI=" crossorigin="anonymous"></script>
+    <script src="main.js"></script>
+
+    </body>
+
+</html>
