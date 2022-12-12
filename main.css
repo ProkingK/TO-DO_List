@@ -127,11 +127,12 @@ main
 .text
 {
     width: 100%;
-    color: white;
+    color: black;
     display: block;
     transition: 0.4s;
     font-size: 1.125rem;
     border-radius: 1rem;
+    padding: 0.5rem;
     background-color: #F1F6F5;
 }
 
